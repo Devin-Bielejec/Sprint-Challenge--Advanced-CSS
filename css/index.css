@@ -151,7 +151,7 @@ h5 {
   color: #23293B;
 }
 h1 {
-  font-size: 3.7rem;
+  font-size: 4rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -184,8 +184,8 @@ nav div {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  width: 350px;
-  padding: 5px 0px;
+  width: 375px;
+  padding-top: 20px;
 }
 nav div a {
   text-decoration: none;
@@ -199,7 +199,7 @@ nav div a {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    padding: 10px 15px;
+    padding: 20px 45px 10px 45px;
   }
   nav div {
     width: 100%;
@@ -217,7 +217,7 @@ footer {
   align-items: center;
 }
 .home img {
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;

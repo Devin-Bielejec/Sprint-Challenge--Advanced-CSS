@@ -189,6 +189,7 @@ nav div {
 }
 nav div a {
   text-decoration: none;
+  color: #454A59;
 }
 @media (max-width: 500px) {
   nav {
@@ -325,4 +326,31 @@ footer {
     color: #22283A;
     background-color: #F6F6F6;
   }
+}
+.home header {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 15px;
+}
+.home header h2 {
+  margin: 15px;
+}
+.home header img {
+  width: 100%;
+}
+.home main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.home main section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: space-around;
+  width: 30%;
+  margin: 15px 0px;
 }

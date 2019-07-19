@@ -77,4 +77,40 @@
       }
     }
   }
+
+  @media @phone{
+    header{
+      img{
+        width: 100%;
+      }
+    }
+
+    .space-images{
+      .blast{
+        width: 100%;
+      }
+      .sky, .launch{
+        display: none;
+      }
+    }
+
+    .walk{
+      margin: 4%;
+      .flexBox(column-reverse wrap, stretch, center);
+      padding: 5px;
+      .walk-img{
+        width: 100%;
+        margin: 0;
+        padding: 10px 0px;
+      }
+      .walk-text{
+        width: 100%;
+        margin: 0;
+      }
+
+      .btn{
+        .buttonStyle(100%, 10px 15px 5px 15px);
+      }
+    }
+  }
 }// home

@@ -8,12 +8,24 @@ nav{
 
     div{
         .flexBox(row nowrap, space-between, center);
-        width: 25%;
+        width: 350px;
 
         padding: 5px 0px;
 
         a{
             text-decoration: none;
+        }
+    }
+
+    @media @phone{
+        .navStyle();
+        .flexBox(column wrap, center, center);
+
+        padding: 10px 15px;
+
+        div{
+            width: 100%;
+            padding: 10px 20px 5px 20px;
         }
     }
 }

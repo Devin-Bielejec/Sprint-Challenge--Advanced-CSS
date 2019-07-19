@@ -184,11 +184,27 @@ nav div {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  width: 25%;
+  width: 350px;
   padding: 5px 0px;
 }
 nav div a {
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  nav {
+    background: #F6F6F6;
+    color: #454A59;
+    border: 1px solid #F1F1F1;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+  }
+  nav div {
+    width: 100%;
+    padding: 10px 20px 5px 20px;
+  }
 }
 footer {
   color: #22283B;
@@ -265,4 +281,45 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home header img {
+    width: 100%;
+  }
+  .home .space-images .blast {
+    width: 100%;
+  }
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .walk {
+    margin: 4%;
+    display: flex;
+    flex-flow: column-reverse wrap;
+    justify-content: stretch;
+    align-items: center;
+    padding: 5px;
+  }
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0px;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+    margin: 0;
+  }
+  .home .walk .btn {
+    background-color: #22283A;
+    width: 100%;
+    color: #F6F6F6;
+    padding: 10px 15px 5px 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 2rem;
+  }
+  .home .walk .btn:hover {
+    color: red;
+  }
 }

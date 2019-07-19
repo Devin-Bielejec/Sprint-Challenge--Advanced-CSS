@@ -261,7 +261,7 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn-container {
+.home .walk .walk-text .btn {
   background-color: #22283A;
   width: 30%;
   color: #F6F6F6;
@@ -270,8 +270,9 @@ footer {
   border-radius: 5px;
   font-size: 2rem;
 }
-.home .walk .walk-text .btn-container:hover {
-  color: red;
+.home .walk .walk-text .btn:hover {
+  color: #22283A;
+  background-color: #F6F6F6;
 }
 .home .walk .walk-img {
   width: 46%;
@@ -310,7 +311,7 @@ footer {
     width: 100%;
     margin: 0;
   }
-  .home .walk .btn {
+  .home .walk .walk-text .btn {
     background-color: #22283A;
     width: 100%;
     color: #F6F6F6;
@@ -319,7 +320,8 @@ footer {
     border-radius: 5px;
     font-size: 2rem;
   }
-  .home .walk .btn:hover {
-    color: red;
+  .home .walk .walk-text .btn:hover {
+    color: #22283A;
+    background-color: #F6F6F6;
   }
 }

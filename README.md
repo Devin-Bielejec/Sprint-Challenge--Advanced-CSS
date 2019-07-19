@@ -33,14 +33,27 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+Adpative websites are passive. The website will adapt its size to meet the new size, usually by using percentages.
+Reponsive websites are active. They will do something when the size changes. They may remove an item or change the layout entirely.
 
 2. Describe what it means to be mobile first vs desktop first.
+Mobile first means the developer is thinking of the mobile page first, so they design their layout based on the mobile page, and when they finish that, they add in the aspects of higher width screens.
+
+Desktop first means the developer is thinking of the desktop page first, so they design their layout based on the desktop page, and when they finish that, they add in the aspects of smaller width screens.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+Normally in the browser (medium font in chrome), the default is 16px. By declaring font-size: 62.5%, we are taking 62.5% of 16px, which is 10px. This allows for easy calculations of pixels. If we want out font-size of "p" tags to be 24px, we can use 2.4rem because 10*2.4 = 24px.
+
+In addition to easy font-size capabilities, by using 62.5%, the page becomes more accessible to users using extra large fonts by default.
 
 4. How would you describe preprocessing to someone new to CSS?
+Preprocessing is shortcuts for css by using new syntax.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+My favorite concept is the organization. I love that by preprocessing we can nest and have components because now we have a system of organizing all of our code.
+
+The concept that gives me the most trouble (in preprocessing) is keeping track of all the moving parts.
+The concept that gives me the most trouble (in all) is creating good looking design, which includes adding padding and margins.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -50,12 +63,12 @@ Follow these steps to set up your project:
 
 ### Git Set up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [X] Create a forked copy of this project.
+- [X] Add your project manager as collaborator on Github.
+- [X] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [X] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [X] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [X] Push commits: git push origin `<firstName-lastName>`.
  
 Follow these steps for completing your project.
 
@@ -66,11 +79,11 @@ Follow these steps for completing your project.
 
 ### Preprocessor Set up
 
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
-* [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+* [X] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [X] Open your terminal and navigate to your preprocessing project by using the `cd` command
+* [X] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [X] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
+* [X] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ## Minimum Viable Product
 
@@ -78,7 +91,7 @@ Your finished project must include all of the following requirements:
 
 ### Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
+* [X] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
 ```markdown
 1.variables.less
@@ -94,31 +107,40 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [X] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
 
-* [ ] Add a viewport meta tag to the head of your index.html page
+        -padding for navigation will be less than 15px
+* [X] Add a viewport meta tag to the head of your index.html page
 
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+* [X] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+    navigation background @nav-bg, @nav-font, @nav-border for colors
+    navigation does not have 15px left and right padding
+    flexbox column wrap, j-center, a-center
+    
 
-* [ ] Navigation Styles: Use the `navigation.less` file for styling.
+* [X] Navigation Styles: Use the `navigation.less` file for styling.
 
-* [ ] Main Content Styles: Use the `home-page.less` file for styling
+* [X] Main Content Styles: Use the `home-page.less` file for styling
 
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+* [X] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
-* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
+* [X] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
 
-* [ ]  Use at least 2 parameters to create your button
+* [X]  Use at least 2 parameters to create your button
 
-* [ ] Create a hover state that swaps the background color and font color of the base button styles.
+* [X] Create a hover state that swaps the background color and font color of the base button styles.
 
 ### Mobile Design
 
-* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
+* [X] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
 
-* [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
+* [X] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
+        -nav padding goes to same as rest, so 15px on left and right
+        -eliminate 2nd and 3rd pictures in lift off
+        -walk column reverse
+        -button is full width
 
-* [ ] Push your changes and create a pull request if you haven't already.
+* [X] Push your changes and create a pull request if you haven't already.
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 

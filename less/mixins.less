@@ -1,1 +1,28 @@
 // Mixins Here
+.flexBox(@flow, @justify, @align){
+    display: flex;
+    flex-flow: @flow;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.navStyle{
+    background: @nav-bg;
+    color: @nav-font;
+    border: 1px solid @nav-border;
+}
+
+.buttonStyle(@width, @padding){
+    background-color: @btn-bg-color;
+    width: @width;
+    color: @wild-sand;
+    padding: @padding;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 2rem;
+
+    &:hover{
+        color: @btn-bg-color;
+        background-color: @wild-sand;
+    }
+}

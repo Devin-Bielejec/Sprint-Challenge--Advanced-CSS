@@ -199,7 +199,7 @@ nav div a {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    padding: 20px 45px 10px 45px;
+    padding: 20px 45px 10px 20px;
   }
   nav div {
     width: 100%;
@@ -289,6 +289,7 @@ footer {
   }
   .home .space-images .blast {
     width: 100%;
+    margin: 5%;
   }
   .home .space-images .sky,
   .home .space-images .launch {
@@ -315,7 +316,7 @@ footer {
     background-color: #22283A;
     width: 100%;
     color: #F6F6F6;
-    padding: 10px 15px 5px 15px;
+    padding: 20px;
     text-align: center;
     border-radius: 5px;
     font-size: 2rem;

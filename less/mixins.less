@@ -1,1 +1,13 @@
 // Mixins Here
+.flexBox(@flow, @justify, @align){
+    display: flex;
+    flex-flow: @flow;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.navStyle{
+    background: @nav-bg;
+    color: @nav-font;
+    border: 1px solid @nav-border;
+}

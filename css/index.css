@@ -1,3 +1,8 @@
+.navStyle {
+  background: #F6F6F6;
+  color: #454A59;
+  border: 1px solid #F1F1F1;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -176,6 +181,7 @@ nav {
 }
 nav div {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   width: 25%;

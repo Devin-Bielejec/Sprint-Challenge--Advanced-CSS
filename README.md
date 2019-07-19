@@ -112,7 +112,7 @@ _You will know everything is working properly when you see the styles enabled fo
         -padding for navigation will be less than 15px
 * [X] Add a viewport meta tag to the head of your index.html page
 
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+* [X] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
     navigation background @nav-bg, @nav-font, @nav-border for colors
     navigation does not have 15px left and right padding
     flexbox column wrap, j-center, a-center
@@ -120,9 +120,9 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [X] Navigation Styles: Use the `navigation.less` file for styling.
 
-* [ ] Main Content Styles: Use the `home-page.less` file for styling
+* [X] Main Content Styles: Use the `home-page.less` file for styling
 
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+* [X] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
 * [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
 

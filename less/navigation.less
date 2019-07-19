@@ -1,20 +1,13 @@
 // Navigation code here
 nav{
-    background: @nav-bg;
-    color: @nav-font;
-    border: 1px solid @nav-border;
+    .navStyle();
 
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+    .flexBox(column wrap, center, center);
 
     padding: 10px 0px;
 
     div{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        .flexBox(row nowrap, space-between, center);
         width: 25%;
 
         padding: 5px 0px;
